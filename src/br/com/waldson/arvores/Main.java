@@ -68,6 +68,7 @@ public class Main {
 
         // 1ª parte
         // Adicionando 500.000 elementos em ordem crescente na ABB
+        System.out.println("\nParte 1");
         long startAddABB = System.currentTimeMillis();
         for(int i = 0; i < 500_000; i++)
             binarySearchTree.insert(i);
@@ -90,6 +91,7 @@ public class Main {
 
          // 2ª parte
          // Adicionando 500.000 elementos aleatoriamente na ABB
+        System.out.println("\nParte 2");
         long startRandomABB = System.currentTimeMillis();
         for(int i = 0; i < 500_000; i++)
             binarySearchTree2.insert((int)(Math.random() * ((1000000 - 1) + 1)) + 1);
